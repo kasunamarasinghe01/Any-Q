@@ -1,0 +1,29 @@
+<app-appbar></app-appbar>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <form (submit)="onClickLogin(form)" #form = ngForm>
+      <div class="user-box">
+        <input type="text" name="email" required="" ngModel>
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+        <input type="password" name="password" required="" ngModel>
+        <label>Password</label>
+      </div>
+      
+      <button>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Login
+      </button>
+    </form>
+
+    <br>
+
+    <span class="bottom-text">Do not have an account?</span>
+    <a href="/Create-Account" class="bottom-button">Create Account</a>
+  </div>
+</body>
